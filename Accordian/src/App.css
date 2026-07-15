@@ -1,0 +1,125 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #242424; 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Wrapper h1 {
+  color: rgba(255, 255, 255, 0.87);
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.accordian {
+  width: 500px;
+  max-width: 90%;
+  background: #1a1a1a; 
+  border-radius: 12px;
+  border: 1px solid #3a3a3a;
+  padding: 15px;
+}
+
+.item {
+  border-bottom: 1px solid #2e2e2e;
+  padding: 10px 0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.25s, border-color 0.25s;
+  border: 1px solid transparent;
+}
+
+.title:hover {
+  background-color: #252525;
+  border-color: #646cff;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.title span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+  transition: color 0.25s;
+}
+
+.title:hover span {
+  color: #747bff;
+}
+
+.answer {
+  padding: 10px 15px 15px 15px;
+  color: #bdc3c7; 
+  font-size: 0.95rem;
+  line-height: 1.6;
+  animation: slideDown 0.25s ease-out forwards;
+}
+
+.answer strong, .answer span.highlight {
+  color: #ffeb3b; 
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  background-color: #646cff; 
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: border-color 0.25s, background-color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.2);
+}
+
+button:hover {
+  background-color: #747bff;
+  border-color: #ffeb3b; 
+}
+
+button:active {
+  background-color: #5b62e6;
+  transform: scale(0.98);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
