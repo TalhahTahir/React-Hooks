@@ -1,0 +1,165 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#020617);
+    color:#fff;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* Products Grid */
+
+.prodss{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+/* Product Card */
+
+.prod{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:20px;
+    text-align:left;
+    transition:.35s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.prod:hover{
+    transform:translateY(-10px) scale(1.03);
+    border-color:#38bdf8;
+    box-shadow:0 20px 40px rgba(56,189,248,.25);
+}
+
+/* Product Image */
+
+.prod img{
+    width:75%;
+    height:150px;
+    object-fit:cover;
+    border-radius:14px;
+    margin-bottom:18px;
+    transition:.4s;
+}
+
+.prod:hover img{
+    transform:scale(1.05);
+}
+
+/* Title */
+
+.prod h3{
+    text-align: center;
+    margin-bottom:8px;
+    color:#f8fafc;
+}
+
+/* Product Details */
+
+.prod p{
+    margin:4px 0;
+    color:#cbd5e1;
+    font-size:.95rem;
+}
+
+.prod p:first-of-type{
+    color:#22c55e;
+    font-weight:600;
+    font-size:1rem;
+}
+
+/* Button Section */
+
+.btnContainer{
+    margin:45px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+}
+
+button{
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    border:none;
+    padding:14px 38px;
+    font-size:1rem;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+    letter-spacing:.5px;
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+button:hover:not(:disabled){
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(6,182,212,.45);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+button:disabled{
+    background:#374151;
+    cursor:not-allowed;
+    box-shadow:none;
+    opacity:.7;
+}
+
+.btnContainer p{
+    color:#f87171;
+    font-weight:600;
+}
+
+/* Footer */
+
+h4{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:20px;
+    font-weight:400;
+    letter-spacing:1px;
+}
+
+/* Loading */
+
+.loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-size:2rem;
+    color:#38bdf8;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#06b6d4;
+}
