@@ -1,0 +1,97 @@
+/* App.css or index.css */
+
+/* Global window setup to smoothly transition background color shifts */
+body {
+  margin: 0;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Center elements perfectly within the viewport block stack layout */
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Base button structural setup handling normal interactions */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  margin: 0 6px 20px 6px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Isolated target for the third primary color-generation button */
+button:nth-of-type(3) {
+  display: block;
+  margin: 15px auto 40px auto;
+  padding: 16px 36px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #111111;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+button:nth-of-type(3):hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+button:nth-of-type(3):active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Format description label presentation styling */
+h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.85;
+  margin: 0 0 10px 0;
+}
+
+/* Main primary generated string indicator output */
+h1 {
+  font-size: 4.5rem;
+  margin: 0 0 40px 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Text nodes directly targeting raw name text layout values */
+body > div {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
